@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noska-Vet | Veterinaria & Centro de Adopción de Cachorros</title>
+  <meta name="description"
+    content="Noska-Vet: Tu clínica veterinaria de confianza y centro de adopción de cachorros. Citas médicas online, atención especializada y adopción responsable.">
+
+  <!-- FontAwesome & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-paw"></i>
+        </div>
+        <div class="logo-text">Noska<span>-Vet</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#inicio" class="active">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#adopcion">Adopta un Cachorro</a></li>
+        <li><a href="#citas">Agendar Cita</a></li>
+        <li><a href="#dashboard">Mis Citas <span class="badge" id="apt-badge-count">0</span></a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#citas" class="btn btn-primary"><i class="fa-regular fa-calendar-check"></i> Agendar Cita</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="hero-tag">
+          <i class="fa-solid fa-heart" style="color: var(--primary-500)"></i> Amor y salud para tu mejor amigo
+        </div>
+        <h1 class="hero-title">Cuidado experto & <span>Adopción de Cachorros</span></h1>
+        <p class="hero-subtitle">En Noska-Vet combinamos medicina veterinaria de primer nivel con un centro dedicado a
+          conectar cachorritos rescatados con familias amorosas.</p>
+        <div class="hero-btns">
+          <a href="#citas" class="btn btn-primary"><i class="fa-solid fa-stethoscope"></i> Reservar Cita Médica</a>
+          <a href="#adopcion" class="btn btn-secondary"><i class="fa-solid fa-dog"></i> Ver Cachorros</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>1,500+</h3>
+            <p>Mascotas Atendidas</p>
+          </div>
+          <div class="stat-item">
+            <h3>320+</h3>
+            <p>Cachorros Adoptados</p>
+          </div>
+          <div class="stat-item">
+            <h3>99%</h3>
+            <p>Familias Felices</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=80"
+            alt="Veterinaria Noska-Vet">
+        </div>
+        <div class="hero-floating-badge">
+          <div class="floating-icon">
+            <i class="fa-solid fa-shield-heart"></i>
+          </div>
+          <div class="floating-text">
+            <strong>Atención Personalizada</strong>
+            <span>Especialistas en bienestar animal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="servicios" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestros Servicios</span>
+        <h2 class="section-title">Servicios Veterinarios Integrales</h2>
+        <p class="section-subtitle">Ofrecemos la mejor calidad médica y estética para que tu mascota viva feliz y
+          saludable.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-user-doctor"></i>
+          </div>
+          <h3>Consulta General</h3>
+          <p>Evaluación clínica completa, diagnósticos oportunos y medicina preventiva para perros y gatos.</p>
+          <a href="#citas" class="btn btn-outline" style="width: 100%;">Agendar Cita</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-syringe"></i>
+          </div>
+          <h3>Vacunación & Desparasitación</h3>
+          <p>Esquemas de vacunación al día para asegurar la máxima protección contra enfermedades.</p>
+          <a href="#citas" class="btn btn-outline" style="width: 100%;">Agendar Cita</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-cut"></i>
+          </div>
+          <h3>Peluquería & Spa Canino</h3>
+          <p>Baño relajante, corte de uñas, limpieza de oídos y estilismo especializado para mimar a tu peludo.</p>
+          <a href="#citas" class="btn btn-outline" style="width: 100%;">Agendar Cita</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-kit-medical"></i>
+          </div>
+          <h3>Cirugía & Laboratorio</h3>
+          <p>Quirófano equipado para esterilizaciones y cirugías generales con monitoreo constante.</p>
+          <a href="#citas" class="btn btn-outline" style="width: 100%;">Agendar Cita</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adoption Section -->
+  <section id="adopcion" class="adoption-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Centro de Adopción</span>
+        <h2 class="section-title">Adopta a un Cachorrito Noska</h2>
+        <p class="section-subtitle">Dale una oportunidad a estos adorables cachorros que buscan un hogar lleno de amor.
+        </p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Todos los Tamaños</button>
+        <button class="filter-btn" data-filter="pequeño">Pequeños</button>
+        <button class="filter-btn" data-filter="mediano">Medianos</button>
+      </div>
+
+      <div id="puppies-grid" class="puppies-grid">
+        <!-- Dynamic Puppy Cards inserted by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointments Form Section -->
+  <section id="citas" class="appointment-section">
+    <div class="container">
+      <div class="appointment-wrapper">
+        <div class="appointment-info">
+          <h2>Reserva tu Cita Online</h2>
+          <p>Programa la atención de tu mascota en sencillos pasos. Los datos quedan registrados de inmediato en tu
+            navegador mediante almacenamiento local.</p>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="info-text">
+              <h4>Horario de Atención</h4>
+              <p>Lunes a Sábado: 8:00 AM - 7:00 PM<br>Domingos: 9:00 AM - 2:00 PM</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="info-text">
+              <h4>Ubicación Noska-Vet</h4>
+              <p>Av. Primavera 1042, Zona Residencial</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="info-text">
+              <h4>Contacto Directo</h4>
+              <p>+51 987 654 321 | contacto@noskavet.com</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="appointment-form" class="appointment-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="apt-owner"><i class="fa-solid fa-user"></i> Tu Nombre Completo</label>
+              <input type="text" id="apt-owner" class="form-control" placeholder="Ej: María Delgado" required>
+            </div>
+
+            <div class="form-group">
+              <label for="apt-phone"><input type="hidden"><i class="fa-solid fa-phone"></i> Teléfono</label>
+              <input type="tel" id="apt-phone" class="form-control" placeholder="Ej: 555-0199" required>
+            </div>
+
+            <div class="form-group">
+              <label for="apt-pet"><i class="fa-solid fa-paw"></i> Nombre de la Mascota</label>
+              <input type="text" id="apt-pet" class="form-control" placeholder="Ej: Toby" required>
+            </div>
+
+            <div class="form-group">
+              <label for="apt-type"><i class="fa-solid fa-dog"></i> Tipo de Mascota</label>
+              <select id="apt-type" class="form-control" required>
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Otro">Otro Peludito</option>
+              </select>
+            </div>
+
+            <div class="form-group full">
+              <label for="apt-service"><i class="fa-solid fa-list-check"></i> Servicio Requerido</label>
+              <select id="apt-service" class="form-control" required>
+                <option value="Consulta General">Consulta General</option>
+                <option value="Vacunación & Desparasitación">Vacunación & Desparasitación</option>
+                <option value="Peluquería & Spa Canino">Peluquería & Spa Canino</option>
+                <option value="Cirugía & Evaluación">Cirugía & Evaluación</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="apt-date"><i class="fa-solid fa-calendar"></i> Fecha</label>
+              <input type="date" id="apt-date" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="apt-time"><i class="fa-solid fa-clock"></i> Hora Preferida</label>
+              <input type="time" id="apt-time" class="form-control" required>
+            </div>
+
+            <div class="form-group full">
+              <label for="apt-notes"><i class="fa-solid fa-note-sticky"></i> Notas o Sintomas (Opcional)</label>
+              <textarea id="apt-notes" class="form-control"
+                placeholder="Cuéntanos un poco sobre el motivo de la cita..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">
+            <i class="fa-solid fa-calendar-plus"></i> Confirmar Cita Online
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Appointments / Dashboard Section -->
+  <section id="dashboard" class="dashboard-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Gestión Local</span>
+        <h2 class="section-title">Mis Citas & Solicitudes Registradas</h2>
+        <p class="section-subtitle">Consulta tus registros guardados en la memoria de este navegador.</p>
+      </div>
+
+      <div class="dashboard-tabs">
+        <button class="tab-btn active" data-tab="appointments">
+          <i class="fa-solid fa-calendar-days"></i> Citas Médicas Agendadas
+        </button>
+        <button class="tab-btn" data-tab="adoptions">
+          <i class="fa-solid fa-heart"></i> Solicitudes de Adopción
+        </button>
+      </div>
+
+      <div id="dashboard-content">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Adoption Modal -->
+  <div id="adoption-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-heart" style="color: var(--primary-500);"></i> Formulario de Adopción</h3>
+        <button class="modal-close" onclick="closeAdoptionModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="modal-puppy-info"></div>
+
+        <form id="adoption-form">
+          <div class="form-group" style="margin-bottom: 12px;">
+            <label for="adopt-applicant">Tu Nombre Completo</label>
+            <input type="text" id="adopt-applicant" class="form-control" required placeholder="Ej: Carlos Silva">
+          </div>
+
+          <div class="form-group" style="margin-bottom: 12px;">
+            <label for="adopt-phone">Teléfono de Contacto</label>
+            <input type="tel" id="adopt-phone" class="form-control" required placeholder="Ej: 998-765-432">
+          </div>
+
+          <div class="form-group" style="margin-bottom: 12px;">
+            <label for="adopt-email">Correo Electrónico</label>
+            <input type="email" id="adopt-email" class="form-control" required placeholder="carlos@gmail.com">
+          </div>
+
+          <div class="form-group" style="margin-bottom: 20px;">
+            <label for="adopt-home">Tipo de Vivienda</label>
+            <select id="adopt-home" class="form-control">
+              <option value="Casa con jardín">Casa con jardín</option>
+              <option value="Departamento">Departamento</option>
+              <option value="Casa sin jardín">Casa sin jardín</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Enviar Solicitud de Adopción
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Noska-Vet <i class="fa-solid fa-paw" style="color: var(--primary-300);"></i></h2>
+          <p>Dedicados al cuidado integral de tus mascotas y a conectar cachorritos sin hogar con familias llenas de
+            amor y responsabilidad.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#adopcion">Adopta Cachorros</a></li>
+            <li><a href="#citas">Citas Online</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios">Medicina General</a></li>
+            <li><a href="#servicios">Vacunación</a></li>
+            <li><a href="#servicios">Spa & Estética</a></li>
+            <li><a href="#servicios">Cirugías</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Contacto</h4>
+          <ul>
+            <li><i class="fa-solid fa-phone"></i> +593 987 654 321</li>
+            <li><i class="fa-solid fa-envelope"></i> contacto@noskavet.com</li>
+            <li><i class="fa-solid fa-location-dot"></i> Av. Primavera 1042</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Noska-Vet. Todos los derechos reservados. Diseñado con amor en tonos rosa 💕</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
